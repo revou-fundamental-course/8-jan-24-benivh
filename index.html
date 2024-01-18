@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Matematik (Persegi)</title>
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    
+    <script src="js/script.js"></script>
+</head>
+<body onload="setup_awal()">
+    <div class="header">
+        <h1>Kaltik <span class="header-shade"> - Kalkulator Matematik</span></h1>
+    </div>
+    
+    
+
+    <div class="container">
+        <div id="brief">
+            <h2>Welcome to Katik</h2>
+            <p>
+                Hai Sobat, selamat datang di Katik :) <br>
+                Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar
+            </p>
+            <p>
+                <button id="hitung_luas" class="tombol tombol-menu" onclick="view_form_luas()">Hitung Luas Persegi</button>
+                <button id="hitung_keliling" class="tombol tombol-menu" onclick="view_form_keliling()">Hitung Keliling Persegi</button>
+            </p>
+        </div>
+
+
+
+        <div id="box-luas">
+            <div class="content-box">
+                <div class="content-box-header">
+                    <p class="content-box-title">Luas Persegi</p>
+                </div>
+                <div class="content-box-text">
+                    <p><img src="img/persegi.png" alt="Persegi Empat" class="img-center"></p>
+                    <p>Rumus Luas Persegi adalah:</p>
+                    <p class="rumus">L = S x S</p>
+                    <p>Di mana: <br>
+                        L = Luas <br>
+                        S = Sisi
+                    </p>
+                    <hr>
+                        
+                    <h4>Hitung Luas Persegi</h4>
+                    <input type="text" name="sisi_luas" id="sisi_luas" placeholder="Nilai Sisi" required class="input-angka">
+                    <input type="button" name="btn-hitung_luas" id="btn-hitung_luas" value="Hitung" class="tombol tombol-primary" onclick="hitung_luas()">
+                    <input type="button" name="btn-reset_luas" id="btn-reset_luas" value="Reset" class="tombol tombol-reset" onclick="reset_form_luas()">
+                    <p id="hasil_text_luas"></p>
+                </div>  
+            </div>
+        </div>
+        
+    
+        <div id="box-keliling">
+            <div class="content-box">
+                <div class="content-box-header">
+                    <p class="content-box-title">Keliling Persegi</p>
+                </div>
+                <div class="content-box-text">
+                    <p><img src="img/persegi.png" alt="Persegi Empat" class="img-center"></p>
+                    <p>Rumus Keliling Persegi adalah:</p>
+                    <p class="rumus">K = 4 x S</p>
+                    <p>Di mana: <br>
+                        K = Keliling <br>
+                        S = Sisi
+                    </p>
+                    <hr>
+                    
+                    <h4>Hitung Keliling Persegi</h4>
+                    <input type="text" name="sisi_keliling" id="sisi_keliling" placeholder="Nilai Sisi" required class="input-angka">
+                    <input type="button" name="btn-hitung_keliling" id="btn-hitung_keliling" value="Hitung" class="tombol tombol-primary" onclick="hitung_keliling()">
+                    <input type="button" name="btn-reset_keliling" id="btn-reset_keliling" value="Reset" class="tombol tombol-reset" onclick="reset_form_keliling()">
+                    <p id="hasil_text_keliling"></p>
+                </div>  
+            </div>
+        </div>
+
+    </div>
+
+    
+
+</body>
+</html>

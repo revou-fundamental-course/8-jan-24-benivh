@@ -1,0 +1,130 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    background-color: #EDEDED;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background: #C4CFE2;
+}
+
+.header {
+    text-align: center;
+    background-color: #0D5987;
+    color: #ffffff;
+    position: sticky;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 0;
+}
+
+.header-shade {
+    color: #BFD1CE;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+
+#brief {
+    text-align: center;
+    font-weight: 300;
+    font-size:medium;
+    margin-bottom: 40px;
+}
+
+.input-angka {
+    border: 1px solid #ABABAB;
+    background-color: #F7F6E9;
+    padding: 6px 6px;
+    box-shadow:inset 0px 1px 0px 0px #EEEDED;
+    border-radius:2px;
+    font-size: 15px;
+}
+
+.tombol {
+	display:inline-block;
+	cursor:pointer;
+	border:2px solid whitesmoke;
+    box-shadow:inset 0px 1px 0px 0px lightgrey;
+    text-shadow:0px 1px 0px #810e05;
+    color:#ffffff;
+    border-radius:6px;
+	font-family: Arial, Helvetica, sans-serif;   
+    font-weight: 400;
+    font-size: 16px;
+	padding:8px 24px;
+	text-decoration:none;
+}
+
+.tombol:hover {
+	color: yellow;
+}
+
+.tombol:active {
+	position:relative;
+	top:1px;
+}
+
+
+.tombol-primary {
+    background-color:#3d94f6;
+}
+
+.tombol-reset {
+    background-color:#f2ab1e;
+}
+
+.tombol-menu {
+    background-color: #AB2132;
+}
+
+
+
+.container {
+    margin: 20px 10px 10px 10px;
+    padding: 20px;
+    border: 1px solid lightslategray;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.content-box {
+    border: 2px solid #226DB5;
+    display: block;
+}
+
+
+.content-box-header {
+    background-color: #226DB5;
+    margin: 0px 0px 0px 0px;
+    padding: 2px 2px;
+    text-align: center;
+    font-size: 24px;
+    position:relative;
+}
+
+.content-box-title {
+    font-weight: 300;
+    color: #EEF0F3;
+}
+
+.content-box-text {
+   
+   padding: 20px;
+    
+}
+
+.rumus {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
